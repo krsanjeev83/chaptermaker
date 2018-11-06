@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Test_Scenarios" parallel = "tests" thread-count="100">
+	 <parameter name="browser" value="chrome" />  
+	<parameter name="remoteurl" value="" />
+	<parameter name="configFile" value="Config/CONFIG.properties"/> 
+	<parameter name="inputsheet" value="Datasheet_MediaPackage.xls"/>
+	<parameter name ="Module" value = "Media Package Test"></parameter>
+ 		 	<test name="Chrome" preserveorder="true">
+			<parameter name="ParameterNValue" value="InputDataRow=>2" />	
+     		<classes>
+      		<class name="com.newdemo.test.SmokeScript_MediaPackage"/>
+   			</classes>
+ 		</test>
+ 	<listeners>
+	  <listener class-name="atu.testng.reports.listeners.ATUReportsListener"></listener>
+	  <listener class-name="atu.testng.reports.listeners.ConfigurationListener"></listener>
+	  <listener class-name="atu.testng.reports.listeners.MethodListener"></listener>
+  	</listeners>
+</suite>

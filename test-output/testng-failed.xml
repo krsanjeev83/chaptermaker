@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="100" name="Failed suite [Test_Scenarios]" parallel="tests">
+  <parameter name="ParameterNValue" value="InputDataRow=&gt;2"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="configFile" value="Config/CONFIG.properties"/>
+  <parameter name="remoteurl" value=""/>
+  <parameter name="Module" value="Chapter Mark Smoke Test"/>
+  <parameter name="inputsheet" value="Datasheet_ChatperMark.xls"/>
+  <listeners>
+    <listener class-name="atu.testng.reports.listeners.ATUReportsListener"/>
+    <listener class-name="atu.testng.reports.listeners.ConfigurationListener"/>
+    <listener class-name="atu.testng.reports.listeners.MethodListener"/>
+  </listeners>
+  <test name="Chrome(failed)" parallel="tests">
+    <parameter name="ParameterNValue" value="InputDataRow=&gt;2"/>
+    <classes>
+      <class name="com.newdemo.test.CM_Scenarios">
+        <methods>
+          <include name="LaunchBrowser"/>
+          <include name="PositiveFlow_1_CMAndMPIntegration_ApproveNo"/>
+        </methods>
+      </class> <!-- com.newdemo.test.CM_Scenarios -->
+    </classes>
+  </test> <!-- Chrome(failed) -->
+</suite> <!-- Failed suite [Test_Scenarios] -->

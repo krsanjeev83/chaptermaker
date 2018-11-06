@@ -1,0 +1,5 @@
+com\newdemo\test\CMAndMP_IntegrationScenarios.class
+com\newdemo\test\E2E_Foxipedia_CM_MP_QManager_AsperaConsole_Flow.class
+com\newdemo\test\SmokeScript_MediaPackage.class
+com\newdemo\test\MediaPackageScenarios.class
+com\newdemo\test\CM_Scenarios.class
